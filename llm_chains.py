@@ -17,7 +17,7 @@ def load_ollama_model():
     llm = Ollama(model=config["ollama_model"])
     return llm
 
-def create_llm(model_path = config["ctransformers"]["model_path"]["large"], model_type = config["ctransformers"]["model_type"], model_config = config["ctransformers"]["model_config"]):
+def create_llm(model_path = config["ctransformers"]["model_path"]["small"], model_type = config["ctransformers"]["model_type"], model_config = config["ctransformers"]["model_config"]):
     llm = CTransformers(model=model_path, model_type=model_type, config=model_config)
     return llm
 
